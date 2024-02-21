@@ -1,0 +1,17 @@
+{
+	"name": "Count Products by category",
+	"properties": {
+		"content": {
+			"query": "-- This is auto-generated code\nSELECT\n    category,count(*) as productnumbers \nFROM\n    OPENROWSET(\n        BULK 'https://saproject254.dfs.core.windows.net/fsproject/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals/master/Azure-Synapse/products.csv',\n        FORMAT = 'CSV',\n        PARSER_VERSION = '2.0',HEADER_ROW = TRUE\n    )  AS [result]\nGROUP by category",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "master",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
