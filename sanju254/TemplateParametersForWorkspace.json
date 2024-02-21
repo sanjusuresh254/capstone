@@ -1,0 +1,24 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"workspaceName": {
+			"value": "sanju254"
+		},
+		"AzureDataLakeStorage_ls_accountKey": {
+			"value": ""
+		},
+		"sanju254-WorkspaceDefaultSqlServer_connectionString": {
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=tcp:sanju254.sql.azuresynapse.net,1433;Initial Catalog=@{linkedService().DBName}"
+		},
+		"AzureDataLakeStorage_ls_properties_typeProperties_url": {
+			"value": "https://saproject254.dfs.core.windows.net/"
+		},
+		"HttpServer_ls_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/"
+		},
+		"sanju254-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://saproject254.dfs.core.windows.net"
+		}
+	}
+}
